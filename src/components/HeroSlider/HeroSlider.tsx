@@ -20,7 +20,7 @@ const slides: Slide[] = [
         title: 'Ресторан Kremleff',
         text: 'Высокая кухня и уютная атмосфера в центре города',
         buttonText: 'Забронировать',
-        buttonLink: '#contacts',    
+        buttonLink: '#contacts',
     },
     {
         id: 2,
@@ -84,11 +84,15 @@ const HeroSlider: React.FC = () => {
                         <img src={slide.bg} alt={slide.title} loading="lazy" />
                     </div>
 
-                    <p className="section-subtitle slider-reveal">
+                    <p className="label-2 section-subtitle slider-reveal text-center">
                         {slide.subtitle}
                     </p>
-                    <h1 className="hero-title slider-reveal">{slide.title}</h1>
-                    <p className="hero-text slider-reveal">{slide.text}</p>
+                    <h1 className="display-1 hero-title slider-reveal text-center">
+                        {slide.title}
+                    </h1>
+                    <p className="body-2 hero-text slider-reveal text-center">
+                        {slide.text}
+                    </p>
 
                     <a
                         href={slide.buttonLink}

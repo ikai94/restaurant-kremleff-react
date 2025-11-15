@@ -206,21 +206,21 @@ body.nav-active {
 }
 
 .display-1 {
-    font-size: var(--fontSize-display-1);
-    line-height: var(--lineHeight-1);
+    font-size: calc(1.3rem + 6.7vw);
+    line-height: calc();
 }
 
 .headline-1 {
-    font-size: var(--fontSize-headline-1);
+    font-size: calc(2rem + 2.5vw);
 }
 
 .headline-2 {
-    font-size: var(--fontSize-headline-2);
+    font-size: calc(1.3rem + 2.4vw);
     line-height: var(--lineHeight-6);
 }
 
 .title-1 {
-    font-size: var(--fontSize-title-1);
+    font-size: calc(1.6rem + 1.2vw);
 }
 
 .title-2 {
@@ -232,7 +232,7 @@ body.nav-active {
 }
 
 .title-4 {
-    font-size: var(--fontSize-title-4);
+    font-size: calc(1.6rem + 1.2vw);
 }
 
 .body-1 {
@@ -2064,7 +2064,6 @@ body.nav-active {
 
     /* REUSED STYLE
    */
-
 
     .container,
     :is(.service, .event) .container {

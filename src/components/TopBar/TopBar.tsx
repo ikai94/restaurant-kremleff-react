@@ -17,14 +17,7 @@ const TopBar = () => {
                     <span className="span">Краснодар, ул.Мачуги,142</span>
                 </address>
 
-                <div className="separator"></div>
-
-                <div className="topbar-item item-2">
-                    <div className="icon">
-                        <IonIcon icon={timeOutline} aria-hidden="true" />
-                    </div>
-                    <span className="span">Время работы: С 8:00 ДО 24:00</span>
-                </div>
+                <div className="topbar-item item-2"></div>
 
                 <a href="tel:+79002626900" className="topbar-item link">
                     <div className="icon">

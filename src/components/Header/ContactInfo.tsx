@@ -2,7 +2,6 @@ const ContactInfo = () => (
     <>
         <p className="headline-1 navbar-title">Контакты</p>
         <address className="body-4">Краснодар, ул.Мачуги,142</address>
-        <p className="body-4 navbar-text">Открыты: С 8:00 ДО 24:00</p>
 
         <a
             href="mailto:restaurant-kremleff@yandex.ru"
