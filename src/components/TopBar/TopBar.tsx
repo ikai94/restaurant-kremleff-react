@@ -1,7 +1,6 @@
 import { IonIcon } from '@ionic/react';
 import {
     locationOutline,
-    timeOutline,
     callOutline,
     mailOutline,
 } from 'ionicons/icons';
