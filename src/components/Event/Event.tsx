@@ -8,21 +8,21 @@ interface EventItem {
 
 const eventsData: EventItem[] = [
     {
-        image: '/images/event-1.jpg',
+        image: 'images/event-1.jpg',
         date: '23/02/2024',
         datetime: '2024-02-23',
         subtitle: 'Еда, Вкус',
         title: 'Приближается 23 февраля — важный праздник в России. Успей забронировать зал.',
     },
     {
-        image: '/images/event-2.jpg',
+        image: 'images/event-2.jpg',
         date: '08/03/2024',
         datetime: '2024-03-08',
         subtitle: 'Здоровая пища',
         title: 'Закажи мероприятие в международный женский день.',
     },
     {
-        image: '/images/event-3.jpg',
+        image: 'images/event-3.jpg',
         date: '01/05/2024',
         datetime: '2024-05-01',
         subtitle: 'Рецепт',

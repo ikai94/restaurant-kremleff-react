@@ -1,0 +1,260 @@
+.banquet-layout {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1.5rem, 3vw, 3rem);
+    position: relative;
+}
+
+.banquet-eyebrow {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    color: rgba(255, 214, 165, 0.8);
+    font-size: 1.2rem;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.banquet-eyebrow::after {
+    position: absolute;
+    top: 100%;
+    left: 44.6%;
+    content: url('images/separator.svg');
+    display: block;
+    width: 100px;
+    margin-inline: auto;
+    margin-block-start: 5px;
+}
+
+.banquet-heading {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.banquet-lead {
+    max-width: 760px;
+    margin-inline: auto;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.banquet-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-block: 1rem 0.5rem;
+}
+
+.banquet-showcase__card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.35);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.banquet-showcase__card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(145deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    pointer-events: none;
+}
+
+.banquet-showcase__card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 214, 165, 0.4);
+}
+
+.banquet-showcase__figure {
+    aspect-ratio: 4 / 3;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.banquet-showcase__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35;
+}
+
+.banquet-showcase__content {
+    position: relative;
+    padding: 1.5rem 1.75rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.banquet-showcase__content h3 {
+    font-size: 1.9rem;
+}
+
+.banquet-showcase__content p {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.4rem;
+}
+
+.banquet-info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.banquet-card {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(6px);
+}
+
+.banquet-card h3 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.banquet-card ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.banquet-card li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.banquet-dot {
+    width: 0.65rem;
+    height: 0.65rem;
+    border-radius: 999px;
+    background: #ffd6a5;
+    margin-top: 1rem;
+    box-shadow: 0 0 8px rgba(255, 214, 165, 0.6);
+}
+
+.banquet-offers {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.banquet-kicker {
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255, 214, 165, 0.8);
+    font-size: 1.2rem;
+}
+
+.banquet-offers__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.banquet-offer {
+    padding: 1.5rem;
+    background: rgba(255, 214, 165, 0.08);
+    border: 1px solid rgba(255, 214, 165, 0.2);
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.95);
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    animation: riseIn 0.6s ease forwards;
+}
+
+.banquet-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 214, 165, 0.18),
+        rgba(255, 255, 255, 0.05)
+    );
+    border: 1px solid rgba(255, 214, 165, 0.3);
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.35);
+}
+
+.banquet-cta__title {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+}
+
+.banquet-cta__text {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.banquet-phone {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 1rem 2.75rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: linear-gradient(120deg, #ffd6a5, #fbb36b 60%, #ff9f43);
+    color: #1b1815;
+    cursor: pointer;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    box-shadow: 0 18px 30px rgba(255, 159, 67, 0.4);
+    text-align: center;
+    max-width: max-content;
+}
+
+.banquet-phone:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 28px 45px rgba(255, 159, 67, 0.55);
+    color: #1b1815;
+}
+
+.banquet-phone:focus-visible {
+    outline: 2px solid rgba(255, 214, 165, 0.8);
+    outline-offset: 4px;
+}
+
+.banquet-phone::after {
+    display: none;
+}
+
+.banquet-button:hover {
+    transform: translateY(-3px) scale(1.01);
+    box-shadow: 0 28px 45px rgba(255, 159, 67, 0.55);
+}
+
+.banquet-button:focus-visible {
+    outline: 2px solid rgba(255, 214, 165, 0.8);
+    outline-offset: 4px;
+}
+
+@keyframes riseIn {
+    from {
+        transform: translateY(16px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .banquet-cta {
+        flex-direction: column;
+        text-align: center;
+    }
+}

@@ -1,122 +1,80 @@
-interface ServiceItem {
-    id: number;
-    imgSrc: string;
-    imgAlt: string;
-    title: string;
-    subtitle: string;
-    dataAttr?: string;
-    disabled?: boolean;
-}
+import './Services.css';
 
-const services: ServiceItem[] = [
+const highlights = [
+    'Двухуровневое пространство с дизайнерским интерьером',
+    'Изысканная кухня от шеф-повара',
+    'Профессиональная команда заботится о каждой детали',
+    'Современное оборудование для любых мероприятий',
+    'Гибкие условия и индивидуальный подход',
+];
+
+const eventFormats = [
+    'Свадьбы и юбилеи',
+    'Корпоративные мероприятия',
+    'Детские праздники',
+    'Банкетные вечера',
+    'Деловые встречи',
+];
+
+const offers = [
+    'Бесплатная консультация по организации шоу-программы',
+    'Подарки для молодожёнов',
+    'Памятные сюрпризы юбилярам',
+    'Расширенная система лояльности для постоянных гостей',
+];
+
+const showcaseCards = [
     {
         id: 1,
-        imgSrc: 'images/service-1.jpg',
-        imgAlt: 'Breakfast',
-        title: 'Ресторанное меню',
-        subtitle: 'Посмотреть меню',
-        dataAttr: 'data-menu-toggler',
+        title: 'Пространство «Kremleff»',
+        subtitle: 'Двухуровневый зал до 250 гостей',
+        imgSrc: '',
+        imgAlt: 'Интерьер банкетного зала',
     },
     {
         id: 2,
-        imgSrc: 'images/service-2.jpg',
-        imgAlt: 'Appetizers',
-        title: 'Банкетное меню',
-        subtitle: 'Посмотреть меню',
-        dataAttr: 'data-menu-banq',
-        disabled: true,
+        title: 'События без границ',
+        subtitle: 'Свадьбы, корпораты, деловые вечера',
+        imgSrc: '',
+        imgAlt: 'Декорированный стол',
     },
     {
         id: 3,
-        imgSrc: 'images/service-3.jpg',
-        imgAlt: 'Drinks',
-        title: 'Барная карта',
-        subtitle: 'Посмотреть меню',
-        dataAttr: 'data-menu-barToggle',
-        disabled: true,
+        title: 'Команда мечты',
+        subtitle: 'Кураторы, шеф и техподдержка 24/7',
+        imgSrc: '',
+        imgAlt: 'Команда банкет-холла',
     },
 ];
 
 const Services: React.FC = () => {
     return (
         <section
-            className="section service bg-black-10 text-center"
-            aria-label="service"
+            className="section service bg-black-10"
+            aria-label="banquet hall"
         >
-            <div className="container">
-                <p className="section-subtitle label-2" id="menu">
-                    творческий & современный
-                </p>
-
-                <h2 className="headline-1 section-title">
-                    Мы предлагаем высший уровень
+            <div className="container banquet-layout">
+                <div className="banquet-eyebrow">творческий & современный</div>
+                <h2 className="headline-1 banquet-heading">
+                    БанкетХолл «Kremleff» — место, где мечты становятся
+                    реальностью
                 </h2>
-
-                <p className="section-text">
-                    Элегантный и аристократичный интерьер подарит ощущение уюта
-                    и комфорта, а музыкальное оформление станет завершающим
-                    штрихом для прекрасного отдыха
-                </p>
-
-                <ul className="grid-list">
-                    {services.map(
-                        ({
-                            id,
-                            imgSrc,
-                            imgAlt,
-                            title,
-                            subtitle,
-                            dataAttr,
-                            disabled,
-                        }) => (
-                            <li key={id}>
-                                <div className="service-card">
-                                    <a
-                                        className={`has-before hover:shine ${disabled ? 'disabled' : ''}`}
-                                    >
-                                        <figure
-                                            className="card-banner img-holder"
-                                            style={
-                                                {
-                                                    '--width': '285',
-                                                    '--height': '336',
-                                                } as React.CSSProperties
-                                            }
-                                        >
-                                            <img
-                                                src={imgSrc}
-                                                width="285"
-                                                height="336"
-                                                loading="lazy"
-                                                alt={imgAlt}
-                                                className="img-cover"
-                                            />
-                                        </figure>
-                                    </a>
-
-                                    <div
-                                        className="card-content"
-                                        {...(dataAttr
-                                            ? { [dataAttr]: true }
-                                            : {})}
-                                    >
-                                        <h3 className="title-4 card-title">
-                                            <a
-                                                className={
-                                                    disabled ? 'disabled' : ''
-                                                }
-                                            >
-                                                {title}
-                                            </a>
-                                        </h3>
-
-                                        <a
-                                            className={`btn-text hover-underline label-2 ${
-                                                disabled ? 'disabled' : ''
-                                            }`}
-                                        >
-                                            {subtitle}
-                                        </a>
+                <ul className="banquet-showcase">
+                    {showcaseCards.map(
+                        ({ id, title, subtitle, imgSrc, imgAlt }) => (
+                            <li key={id} className="banquet-showcase__item">
+                                <div className="banquet-showcase__card">
+                                    <figure className="banquet-showcase__figure">
+                                        <img
+                                            src={imgSrc}
+                                            alt={imgAlt}
+                                            className="banquet-showcase__image"
+                                            loading="lazy"
+                                        />
+                                    </figure>
+                                    <div className="banquet-showcase__content">
+                                        <h3>{title}</h3>
+                                        <p>{subtitle}</p>
                                     </div>
                                 </div>
                             </li>
@@ -124,23 +82,76 @@ const Services: React.FC = () => {
                     )}
                 </ul>
 
-                <img
-                    src="images/shape-1.png"
-                    width="246"
-                    height="412"
-                    loading="lazy"
-                    alt="shape"
-                    className="shape shape-1 move-anim"
-                />
-                <img
-                    src="images/shape-2.png"
-                    width="343"
-                    height="345"
-                    loading="lazy"
-                    alt="shape"
-                    className="shape shape-2 move-anim"
-                />
+                <div className="banquet-info-grid">
+                    <article className="banquet-card">
+                        <h3>Почему выбирают нас?</h3>
+                        <ul>
+                            {highlights.map((item) => (
+                                <li key={item}>
+                                    <span className="banquet-dot" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </article>
+
+                    <article className="banquet-card">
+                        <h3>Мы создаём праздники любой сложности</h3>
+                        <ul>
+                            {eventFormats.map((item) => (
+                                <li key={item}>
+                                    <span className="banquet-dot" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </article>
+                </div>
+
+                <div className="banquet-offers">
+                    <p className="banquet-kicker">
+                        Специальные предложения каждый месяц
+                    </p>
+                    <div className="banquet-offers__list">
+                        {offers.map((item) => (
+                            <article key={item} className="banquet-offer">
+                                {item}
+                            </article>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="banquet-cta">
+                    <div>
+                        <p className="banquet-cta__title">
+                            Забронируйте ваше событие прямо сейчас
+                        </p>
+                        <p className="banquet-cta__text">
+                            Позвоните нам, и мы поможем воплотить ваши мечты в
+                            реальность.
+                        </p>
+                    </div>
+                    <a href="tel:+79002626900" className="banquet-phone body-1">
+                        +7 (900) 26-26-900
+                    </a>
+                </div>
             </div>
+            <img
+                src="images/shape-1.png"
+                width="246"
+                height="412"
+                loading="lazy"
+                alt="shape"
+                className="shape shape-1 move-anim"
+            />
+            <img
+                src="images/shape-2.png"
+                width="343"
+                height="345"
+                loading="lazy"
+                alt="shape"
+                className="shape shape-2 move-anim"
+            />
         </section>
     );
 };

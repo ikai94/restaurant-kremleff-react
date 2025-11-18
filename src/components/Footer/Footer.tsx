@@ -23,7 +23,7 @@ const Footer = () => {
         <footer
             id="contacts"
             className="footer section has-bg-image text-center"
-            style={{ backgroundImage: "url('/images/footer-bg.jpg')" }}
+            style={{ backgroundImage: "url('images/footer-bg.jpg')" }}
         >
             <div className="container">
                 <div className="footer-top grid-list">
@@ -31,7 +31,7 @@ const Footer = () => {
                     <div className="footer-brand has-before has-after">
                         <a href="#home" className="logo">
                             <img
-                                src="/images/logo.png"
+                                src="images/logo.png"
                                 width={160}
                                 height={50}
                                 loading="lazy"

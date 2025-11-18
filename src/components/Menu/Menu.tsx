@@ -17,7 +17,7 @@ const menuItems: MenuItem[] = [
             'Листья салата с соусом, сыром Пармезан и хрустящими сухариками.',
         weight: '40/120/50 г',
         price: '410 ₽',
-        image: '/images/menu-1.png',
+        image: 'images/menu-1.png',
         alt: 'Caesar with chicken',
     },
     {
@@ -26,7 +26,7 @@ const menuItems: MenuItem[] = [
         description:
             'Листья салата с соусом, сыром Пармезан и хрустящими сухариками.',
         price: '470 ₽',
-        image: '/images/menu-2.png',
+        image: 'images/menu-2.png',
         alt: 'Caesar with salmon',
     },
     {
@@ -35,7 +35,7 @@ const menuItems: MenuItem[] = [
         description:
             'Листья салата с соусом, сыром Пармезан и хрустящими сухариками.',
         price: '520 ₽',
-        image: '/images/menu-3.png',
+        image: 'images/menu-3.png',
         alt: 'Caesar with shrimp',
     },
     {
@@ -44,7 +44,7 @@ const menuItems: MenuItem[] = [
         description: 'C картофельными дольками.',
         price: '890 ₽',
         badge: 'New',
-        image: '/images/menu-4.png',
+        image: 'images/menu-4.png',
         alt: 'Tokusen Wagyu steak',
     },
     {
@@ -53,7 +53,7 @@ const menuItems: MenuItem[] = [
         description:
             'Нежная свиная шея, обжаренная с картофелем, грибами и овощами.',
         price: '410 ₽',
-        image: '/images/menu-5.png',
+        image: 'images/menu-5.png',
         alt: 'Pork pan',
     },
     {
@@ -62,7 +62,7 @@ const menuItems: MenuItem[] = [
         description:
             'Ломтики нежной телятины, обжаренные с перчиком, стручковой фасолью, грибами и соевым соусом.',
         price: '520 ₽',
-        image: '/images/menu-6.png',
+        image: 'images/menu-6.png',
         alt: 'Beef pan',
     },
 ];
@@ -143,7 +143,7 @@ const Menu: React.FC = () => {
                 </a>
 
                 <img
-                    src="/images/shape-5.png"
+                    src="images/shape-5.png"
                     width={921}
                     height={1036}
                     loading="lazy"
@@ -151,7 +151,7 @@ const Menu: React.FC = () => {
                     className="shape shape-2 move-anim"
                 />
                 <img
-                    src="/images/shape-6.png"
+                    src="images/shape-6.png"
                     width={343}
                     height={345}
                     loading="lazy"

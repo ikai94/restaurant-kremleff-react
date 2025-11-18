@@ -123,14 +123,17 @@ const HeroSlider: React.FC = () => {
                 <IonIcon icon={chevronForwardOutline} />
             </button>
 
-            <a href="#menu" className="hero-btn has-before">
+            <a
+                href="https://rest-kremleff.ru/menu/Banketnoe_menu.pdf"
+                target="_blank"
+                className="hero-btn has-after"
+            >
                 <img
-                    src="images/hero-icon.png"
-                    width="48"
-                    height="48"
-                    alt="hero icon"
+                    src="images/krem-logo.png"
+                    width="80"
+                    height="80"
+                    alt="booking icon"
                 />
-                <span className="span">Меню</span>
             </a>
         </section>
     );
