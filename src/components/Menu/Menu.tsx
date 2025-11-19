@@ -130,11 +130,6 @@ const Menu: React.FC = () => {
                     ))}
                 </ul>
 
-                <p className="menu-text text-center">
-                    Ежедневно с <span className="span">8:00</span> до{' '}
-                    <span className="span">24:00</span>
-                </p>
-
                 <a className="btn btn-primary disabled" data-menu-toggler>
                     <span className="text text-1">Посмотреть меню</span>
                     <span className="text text-2" aria-hidden="true">

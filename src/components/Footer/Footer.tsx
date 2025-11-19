@@ -57,8 +57,6 @@ const Footer = () => {
                             Вопрос бронирования: 7 (900) 26-26-900
                         </a>
 
-                        <p className="body-4">Время работы: С 8:00 ДО 24:00</p>
-
                         <div className="wrapper">
                             <div className="separator"></div>
                             <div className="separator"></div>
@@ -67,7 +65,7 @@ const Footer = () => {
 
                         <p className="title-1">
                             KREMLEFF <br />
-                            Ресторан европейской кухни
+                            Ресторан русской кухни
                         </p>
                     </div>
 
