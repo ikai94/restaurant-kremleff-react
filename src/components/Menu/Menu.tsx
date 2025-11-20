@@ -12,58 +12,59 @@ interface MenuItem {
 const menuItems: MenuItem[] = [
     {
         id: 1,
-        title: 'Цезарь с курицей',
+        title: 'Салат Болгарский',
         description:
-            'Листья салата с соусом, сыром Пармезан и хрустящими сухариками.',
+            'Говядина, помидорчик, перец сладкий и сыр, с лёгким медово-горчичным соусом.',
         weight: '40/120/50 г',
         price: '410 ₽',
-        image: 'images/menu-1.png',
-        alt: 'Caesar with chicken',
+        image: 'images/menu-1.jpg',
+        alt: 'Bulgarian salad',
     },
     {
         id: 2,
-        title: 'Цезарь с лососем',
+        title: 'Салат с языком',
         description:
-            'Листья салата с соусом, сыром Пармезан и хрустящими сухариками.',
+            'Отварной говяжий язык, грибочки жареные, яйцо, маринованный лук и домашний майонез.',
         price: '470 ₽',
-        image: 'images/menu-2.png',
-        alt: 'Caesar with salmon',
+        image: 'images/menu-2.jpg',
+        alt: 'Salad with tongue',
     },
     {
         id: 3,
-        title: 'Цезарь с креветками',
+        title: 'Салат теплый с телятиной',
         description:
-            'Листья салата с соусом, сыром Пармезан и хрустящими сухариками.',
+            'Обжаренная телятина на подушке из микс-салата, огурчик квашенный и фирменная заправка.',
         price: '520 ₽',
         image: 'images/menu-3.png',
-        alt: 'Caesar with shrimp',
+        alt: 'Warm salad with veal',
     },
     {
         id: 4,
-        title: 'Стейк из телятины',
-        description: 'C картофельными дольками.',
+        title: 'Салат фирменный «Kremleff»',
+        description:
+            'Нежнейшее сочетание форели, красной икры, на подушке из помидорчика и перепелиного яйца слоями и сливочный крем-соус.',
         price: '890 ₽',
         badge: 'New',
-        image: 'images/menu-4.png',
-        alt: 'Tokusen Wagyu steak',
+        image: 'images/menu-4.jpg',
+        alt: 'Kremleff Signature Salad',
     },
     {
         id: 5,
-        title: 'Сковородка со свининой',
+        title: 'Салат с кальмаром',
         description:
-            'Нежная свиная шея, обжаренная с картофелем, грибами и овощами.',
+            'Кальмар отварной в сочетании со свежим огурцом и морской капустой с фирменной заправкой и зеленью.',
         price: '410 ₽',
-        image: 'images/menu-5.png',
-        alt: 'Pork pan',
+        image: 'images/menu-5.jpg',
+        alt: 'Salad with squid',
     },
     {
         id: 6,
-        title: 'Сковородка с телятиной',
+        title: 'Салат с морскими гадами',
         description:
-            'Ломтики нежной телятины, обжаренные с перчиком, стручковой фасолью, грибами и соевым соусом.',
+            'Дары моря слегка обжаренные в соусе «Терияки», огурец свежий, кинза, салат-MIX и лимончик.',
         price: '520 ₽',
-        image: 'images/menu-6.png',
-        alt: 'Beef pan',
+        image: 'images/menu-6.jpg',
+        alt: 'Salad with sea reptiles',
     },
 ];
 
@@ -105,20 +106,20 @@ const Menu: React.FC = () => {
                                             {item.title}
                                         </h3>
 
-                                        {item.weight && (
+                                        {/* {item.weight && (
                                             <span className="badge label-1">
                                                 {item.weight}
                                             </span>
-                                        )}
+                                        )} */}
                                         {item.badge && (
                                             <span className="badge label-1">
                                                 {item.badge}
                                             </span>
                                         )}
 
-                                        <span className="span title-2">
+                                        {/* <span className="span title-2">
                                             {item.price}
-                                        </span>
+                                        </span> */}
                                     </div>
 
                                     <p className="card-text label-1">

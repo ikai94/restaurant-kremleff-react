@@ -35,14 +35,10 @@ const SpecialDish = () => {
                     </h2>
 
                     <p className="section-text">
-                        Нежнейшее сочетание форели, красной икры с помидором и
-                        яйцом
+                        Нежнейшее сочетание форели, красной икры, на подушке из
+                        помидорчика и перепелиного яйца слоями и сливочный
+                        крем-соус
                     </p>
-
-                    <div className="wrapper">
-                        <del className="del body-3">750₽</del>
-                        <span className="span body-1">590₽</span>
-                    </div>
 
                     <a className="btn btn-primary disabled" data-menu-toggler>
                         <span className="text text-1">Посмотреть меню</span>
