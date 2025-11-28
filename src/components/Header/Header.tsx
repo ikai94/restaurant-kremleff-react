@@ -8,6 +8,7 @@ const Header = () => {
     const [isActive, setIsActive] = useState<boolean>(false);
     const [isHidden, setIsHidden] = useState<boolean>(false);
     const [lastScrollPos, setLastScrollPos] = useState<number>(0);
+    const [activeLink, setActiveLink] = useState<string>('#home');
 
     const toggleNavbar = () => setIsNavOpen((prev) => !prev);
 
@@ -30,6 +31,24 @@ const Header = () => {
         document.body.classList.toggle('nav-active', isNavOpen);
     }, [isNavOpen]);
 
+    useEffect(() => {
+        const syncActiveLinkWithHash = () => {
+            const { hash } = window.location;
+            setActiveLink(hash || '#home');
+        };
+
+        syncActiveLinkWithHash();
+        window.addEventListener('hashchange', syncActiveLinkWithHash);
+
+        return () =>
+            window.removeEventListener('hashchange', syncActiveLinkWithHash);
+    }, []);
+
+    const handleNavItemSelect = (href: string) => {
+        setActiveLink(href);
+        setIsNavOpen(false);
+    };
+
     return (
         <header
             className={`header ${isActive ? 'active' : ''} ${
@@ -40,7 +59,12 @@ const Header = () => {
             <div className="container">
                 <Logo />
 
-                <Navbar isOpen={isNavOpen} toggleNav={toggleNavbar}>
+                <Navbar
+                    isOpen={isNavOpen}
+                    toggleNav={toggleNavbar}
+                    activeLink={activeLink}
+                    onSelect={handleNavItemSelect}
+                >
                     <ContactInfo />
                 </Navbar>
 

@@ -933,7 +933,7 @@ body.nav-active {
     bottom: 15px;
     right: 15px;
     z-index: 2;
-    background-color: var(--gold-crayola);
+    background-color: hsl(30deg 7.69% 5.1%);
     width: 110px;
     height: 110px;
     padding: 12px;

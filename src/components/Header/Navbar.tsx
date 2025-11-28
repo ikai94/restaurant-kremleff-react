@@ -7,6 +7,8 @@ import { chevronUpOutline } from 'ionicons/icons';
 interface NavbarProps {
     isOpen: boolean;
     toggleNav: () => void;
+    activeLink: string;
+    onSelect: (href: string) => void;
     children?: React.ReactNode;
 }
 
@@ -16,7 +18,13 @@ interface NavLink {
     active?: boolean;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ isOpen, toggleNav, children }) => {
+const Navbar: React.FC<NavbarProps> = ({
+    isOpen,
+    toggleNav,
+    activeLink,
+    onSelect,
+    children,
+}) => {
     const navItems: NavLink[] = [
         { href: '#home', label: 'Главная', active: true },
         { href: '#menu', label: 'Меню' },
@@ -40,7 +48,12 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, toggleNav, children }) => {
 
             <ul className="navbar-list">
                 {navItems.map((item) => (
-                    <NavItem key={item.href} {...item} />
+                    <NavItem
+                        key={item.href}
+                        {...item}
+                        active={activeLink === item.href}
+                        onClick={() => onSelect(item.href)}
+                    />
                 ))}
             </ul>
 

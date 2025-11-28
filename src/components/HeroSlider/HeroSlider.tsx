@@ -71,7 +71,7 @@ const HeroSlider: React.FC = () => {
     };
 
     return (
-        <section className="hero" data-hero-slider>
+        <section className="hero" data-hero-slider id="Home">
             {slides.map((slide, index) => (
                 <div
                     key={slide.id}
