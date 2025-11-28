@@ -40,7 +40,12 @@ const SpecialDish = () => {
                         крем-соус
                     </p>
 
-                    <a className="btn btn-primary disabled" data-menu-toggler>
+                    <a
+                        className="btn btn-primary disabled"
+                        data-menu-toggler
+                        href="https://disk.yandex.ru/i/hZj8WZNp-8ylsA"
+                        target="_blank"
+                    >
                         <span className="text text-1">Посмотреть меню</span>
                         <span className="text text-2" aria-hidden="true">
                             Посмотреть меню
