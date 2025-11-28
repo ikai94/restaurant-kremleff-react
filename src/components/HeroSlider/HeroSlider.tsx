@@ -98,7 +98,11 @@ const HeroSlider: React.FC = () => {
                         href={slide.buttonLink}
                         className="btn btn-primary slider-reveal"
                     >
-                        {slide.buttonText}
+                        <span className="text text-1">{slide.buttonText}</span>
+
+                        <span className="text text-2" aria-hidden="true">
+                            {slide.buttonText}
+                        </span>
                     </a>
                 </div>
             ))}
