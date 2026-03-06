@@ -31,9 +31,9 @@ const Footer = () => {
                     <div className="footer-brand has-before has-after">
                         <a href="#home" className="logo">
                             <img
-                                src="images/logo.png"
-                                width={160}
-                                height={50}
+                                src="images/krem-logo.png"
+                                width={80}
+                                height={25}
                                 loading="lazy"
                                 alt="Kremleff"
                             />
@@ -54,7 +54,10 @@ const Footer = () => {
                             href="tel:+79002626900"
                             className="body-4 contact-link"
                         >
-                            Вопрос бронирования: 7 (900) 26-26-900
+                            Вопрос бронирования:
+                            <span className="footer-phone">
+                                7 (900) 26-26-900
+                            </span>
                         </a>
 
                         <div className="wrapper">
@@ -64,8 +67,8 @@ const Footer = () => {
                         </div>
 
                         <p className="title-1">
-                            KREMLEFF <br />
-                            Ресторан русской кухни
+                            БанкетХолл «Kremleff» <br />
+                            Ресторан европейской кухни
                         </p>
                     </div>
 
@@ -101,7 +104,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p className="copyright">&copy; 2025 Kremleff.</p>
+                    <p className="copyright">&copy; 2026 БанкетХолл «Kremleff».</p>
                 </div>
             </div>
         </footer>

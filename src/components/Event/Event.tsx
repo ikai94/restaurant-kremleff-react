@@ -12,30 +12,30 @@ const eventsData: EventItem[] = [
         date: '23/02/2026',
         datetime: '2026-02-23',
         subtitle: 'Еда, Вкус',
-        title: 'Приближается 23 февраля — важный праздник в России. Успей забронировать зал.',
+        title: 'Работаем только с профессионалами.',
     },
     {
         image: 'images/event-2.jpg',
         date: '08/03/2026',
         datetime: '2026-03-08',
         subtitle: 'Здоровая пища',
-        title: 'Закажи мероприятие в международный женский день.',
+        title: 'Используем полезные и локальные ингредиенты.',
     },
     {
         image: 'images/event-3.jpg',
         date: '01/05/2026',
         datetime: '2026-05-01',
         subtitle: 'Рецепт',
-        title: '1 мая во многих странах мира отмечается международный праздник — День труда (Праздник Весны и Труда).',
+        title: 'Необычно сочетаем традиционные ингредиенты... которые реально работают. ',
     },
 ];
 
 const Event = () => {
     return (
         <section
-            id="event"
             className="section event bg-black-10"
             aria-label="event"
+            id="event"
         >
             <div className="container">
                 <p className="section-subtitle label-2 text-center">
@@ -43,7 +43,7 @@ const Event = () => {
                 </p>
 
                 <h2 className="section-title headline-1 text-center">
-                    Предстоящие События
+                    С заботой о Вас
                 </h2>
 
                 <ul className="grid-list">
@@ -67,13 +67,6 @@ const Event = () => {
                                         alt={event.title}
                                         className="img-cover"
                                     />
-
-                                    <time
-                                        className="publish-date label-2"
-                                        dateTime={event.datetime}
-                                    >
-                                        {event.date}
-                                    </time>
                                 </div>
 
                                 <div className="card-content">

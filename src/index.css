@@ -1504,6 +1504,11 @@ body.nav-active {
     transition: var(--transition-1);
 }
 
+.footer-phone {
+    margin-block: 6px;
+    transition: var(--transition-1);
+}
+
 .footer-brand .contact-link:is(:hover, :focus-visible) {
     color: var(--gold-crayola);
 }

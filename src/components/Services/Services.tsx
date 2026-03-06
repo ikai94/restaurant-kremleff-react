@@ -26,8 +26,8 @@ const offers = [
 const showcaseCards = [
     {
         id: 1,
-        title: 'Пространство «Kremleff»',
-        subtitle: 'Двухуровневый зал до 250 гостей',
+        title: 'Камерное пространство «Kremleff»',
+        subtitle: 'Двухуровневый зал на 20 или 50 гостей',
         imgSrc: 'images/1.jpg',
         imgAlt: 'Интерьер банкетного зала',
     },

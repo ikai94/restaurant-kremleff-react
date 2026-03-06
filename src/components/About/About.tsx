@@ -1,9 +1,9 @@
 const About = () => {
     return (
         <section
+            id="about"
             className="section about text-center"
             aria-labelledby="about-label"
-            id="about"
         >
             <div className="container">
                 <div className="about-content">

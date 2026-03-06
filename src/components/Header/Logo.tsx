@@ -2,7 +2,12 @@ import React from 'react';
 
 const Logo: React.FC = () => (
     <a href="#" className="logo">
-        <img src="images/logo.png" width={160} height={50} alt="Kremleff" />
+        <img
+            src="images/krem-logo.png"
+            width={80}
+            height={25}
+            alt="Kremleff"
+        />
     </a>
 );
 
