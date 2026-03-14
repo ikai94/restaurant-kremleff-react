@@ -26,8 +26,8 @@ const offers = [
 const showcaseCards = [
     {
         id: 1,
-        title: 'Камерное пространство «Kremleff»',
-        subtitle: 'Двухуровневый зал на 20 или 50 гостей',
+        title: 'Уютные и колоритные пространства',
+        subtitle: 'Залы на 20 или 50 гостей',
         imgSrc: 'images/1.jpg',
         imgAlt: 'Интерьер банкетного зала',
     },
@@ -41,7 +41,7 @@ const showcaseCards = [
     {
         id: 3,
         title: 'Атмосфера праздника',
-        subtitle: 'Стильный интерьер и продуманная концепция пространства',
+        subtitle: 'Стильный интерьер и профессиональное свето-звуковое оборудование',
         imgSrc: 'images/3.jpg',
         imgAlt: 'Праздничная атмосфера в зале',
     },
@@ -56,7 +56,7 @@ const Services: React.FC = () => {
             <div className="container banquet-layout">
                 <div className="banquet-eyebrow">творческий & современный</div>
                 <h2 className="headline-1 banquet-heading">
-                    БанкетХолл «Kremleff» — место, где мечты становятся
+                    Kremleff БанкетХолл — место, где мечты становятся
                     реальностью
                 </h2>
                 <ul className="banquet-showcase">
@@ -128,7 +128,7 @@ const Services: React.FC = () => {
                         </p>
                         <p className="banquet-cta__text">
                             Позвоните нам, и мы поможем воплотить ваши мечты в
-                            реальность.
+                            реальность
                         </p>
                     </div>
                     <a href="tel:+79002626900" className="banquet-phone body-1">

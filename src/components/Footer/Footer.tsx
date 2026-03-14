@@ -67,7 +67,7 @@ const Footer = () => {
                         </div>
 
                         <p className="title-1">
-                            БанкетХолл «Kremleff» <br />
+                            Kremleff БанкетХолл <br />
                             Ресторан европейской кухни
                         </p>
                     </div>
@@ -104,7 +104,7 @@ const Footer = () => {
                 </div>
 
                 <div className="footer-bottom">
-                    <p className="copyright">&copy; 2026 БанкетХолл «Kremleff».</p>
+                    <p className="copyright">&copy; 2026 Kremleff БанкетХолл</p>
                 </div>
             </div>
         </footer>
