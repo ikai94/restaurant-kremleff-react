@@ -60,7 +60,11 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(145deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
+    background: linear-gradient(
+        145deg,
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.05)
+    );
     pointer-events: none;
 }
 

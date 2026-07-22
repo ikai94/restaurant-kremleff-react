@@ -1187,9 +1187,19 @@ body.nav-active {
     transition: var(--transition-2);
 }
 
+.menu-card .card-banner .menu-card__image--raised {
+    transform: translateY(4px) scale(0.94);
+}
+
 .hover\:card:is(:hover, :focus-within) .card-banner .img-cover {
     opacity: 0.7;
     transform: scale(1.05);
+}
+
+.hover\:card:is(:hover, :focus-within)
+    .card-banner
+    .menu-card__image--raised {
+    transform: translateY(4px) scale(0.99);
 }
 
 .menu-card .card-banner {

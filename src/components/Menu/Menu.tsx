@@ -95,7 +95,11 @@ const Menu: React.FC = () => {
                                         height={100}
                                         loading="lazy"
                                         alt={item.alt}
-                                        className="img-cover"
+                                        className={`img-cover${
+                                            item.id === 2
+                                                ? ' menu-card__image--raised'
+                                                : ''
+                                        }`}
                                         style={{
                                             height: '100px',
                                             width: '100px',
